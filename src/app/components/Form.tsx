@@ -18,7 +18,7 @@ const Form = ({ onCreateTask }: FormProps) => {
 
     setIsPressed(true);
     onCreateTask({ title });
-    setTitle(""); // Clear input
+    setTitle("");
 
     setTimeout(() => setIsPressed(false), 150);
   };
@@ -35,6 +35,7 @@ const Form = ({ onCreateTask }: FormProps) => {
         name="title"
         onChange={handleChange}
         placeholder="Create a new task"
+        value={title}
       />
       {/* asked chatgpt on the best way of styling the button; mui-domain/docs alternative */}
       <Button
