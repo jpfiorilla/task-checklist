@@ -7,6 +7,7 @@ type FormProps = {
 };
 
 const Form = ({ onCreateTask }: FormProps) => {
+  // asked chatgpt for this submit handler
   const handleSubmit: FormEventHandler<HTMLFormElement> = (e) => {
     e.preventDefault();
 
@@ -23,6 +24,7 @@ const Form = ({ onCreateTask }: FormProps) => {
   return (
     <form className="w-full flex gap-2" onSubmit={handleSubmit}>
       <Input autoFocus fullWidth name="title" placeholder="Create a new task" />
+      {/* asked chatgpt on the best way of styling the button; mui-domain/docs alternative */}
       <Button color="primary" type="submit" variant="contained">
         Submit
       </Button>
