@@ -22,4 +22,4 @@ I took a pretty standard approach to this project. I started with the schema for
 
 AI tools supported my workflow in several ways. ChatGPT proved to be a fast and useful resource for docs-style questions; from implementing package boilerplates to the most idiomatic way of utilizing those packages' APIs. I was able to ask it naunced questions to determine the precise right approach for each decision. Generally I would provide it with clips of my existing code, and I would paste bits and pieces in manually in order to make any suggested implementations thoughtfully and defensively.
 
-I also made deletion and localStorage hydration stretch goals for this exercise. Given direction, ChatGPT was able to provide easy solutions and debugging for developing these features.
+I also made deletion and localStorage hydration stretch goals for this exercise. Given direction, ChatGPT was able to provide easy solutions and debugging for developing these features; for example, it was able to update the `useTasks` method so that nothing client-only (like localStorage or Date) runs until after the component mounts.
